@@ -29,4 +29,8 @@ export class BookRideUseCase {
 
     return rideId;
   }
+
+  async listPastRides(riderId: number){
+    return this.rideRepository.listPastRides(riderId)
+  }
 }
